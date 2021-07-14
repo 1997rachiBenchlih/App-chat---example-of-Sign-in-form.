@@ -1,0 +1,248 @@
+:root {
+    --bg1: #040406;
+    --bg2: #323234;
+    --boxShadown: #010203;
+    --shadown1: #040406;
+    --shadown2: #444446;
+    --SforIcon1: #2a2b2c;
+    --SforIcon2: #020305;
+}
+
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#im{
+  border-radius: 100%;
+  height:168px;
+  width:300px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2));
+}
+
+#container,#container1 {
+    background: linear-gradient(135deg, var(--bg2), var(--bg1));
+    box-shadow: 1 1 10px 10px var(--boxShadown);
+    border-radius: 50px;
+}
+
+h1 {
+    font-family: sans-serif;
+    margin: 32px auto;
+    color: #4f7afe;
+}
+#subtitle{
+  font-family: "Comic Sans MS";
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 32px auto;
+  color: #4f7afe;
+}
+
+#user,
+#email,
+#lock,
+#message {
+    width: 240px;
+    height: 42px;
+    margin: 16px;
+    background: none;
+    font-size: 18px;
+    color: #777;
+    box-shadow: inset 4px 4px 8px var(--shadown1), inset -4px -4px 8px var(--shadown2);
+    border-radius: 16px;
+    padding-left: 4px;
+}
+
+input {
+    background: none;
+    height: 42px;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    color: #777;
+    font-size: 16px;
+}
+
+#bt {
+    width: 240px;
+    height: 42px;
+    background: none;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #4f7afe;
+    box-shadow: 4px 4px 8px var(--shadown1), -4px -4px 8px var(--shadown2);
+    margin: 16px;
+}
+
+#bt1 {
+    width: 100px;
+    height: 35px;
+    background: none;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #4f7afe;
+    box-shadow: 4px 4px 8px var(--shadown1), -4px -4px 8px var(--shadown2);
+    margin: 16px;
+}
+
+#bt,
+#bt1:hover {
+    color: #1f5aff;
+    box-shadow: 6px 6px 10px var(--shadown1), -6px -6px 10px var(--shadown2);
+}
+
+#bt,
+#bt1:active {
+    box-shadow: inset 4px 4px 8px var(--shadown1), inset -4px -4px 8px var(--shadown2);
+    font-size: 20px;
+}
+
+h4 {
+    color: #777;
+    margin: 16px auto;
+}
+
+#social_icon i {
+    margin: 0 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    box-shadow: inset 3px 3px 8px var(--SforIcon1), inset -3px -3px 8px var(--SforIcon2), 1px 1px 2px var(--SforIcon2), -1px -1px 2px var(--SforIcon1);
+    border-radius: 50%;
+    color: #4f7af1;
+    transition-duration: 0.2s;
+}
+
+#social_icon i:hover {
+    transform: scale(1.2);
+}
+
+#social_icon i:active {
+    transform: scale(0.9);
+}
+
+#foot {
+    color: #777;
+    margin: 16px;
+}
+
+#sign {
+    color: #4f7af1;
+}
+
+#dark {
+    display: none;
+    color: #112;
+}
+
+#lt {
+    color: #eef;
+}
+
+#mode button {
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 8px var(--shadow1), -4px -4px 8px var(--shadow2);
+    border-radius: 8px;
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
+
+#mode button:hover {
+    transform: scale(1.2);
+}
+
+#mode button:active {
+    transform: scale(0.9);
+}
+
+.header {
+    width: 10px;
+    height: auto;
+}
+
+.header h1 {
+    color: #f8f8f8;
+    padding: 15px;
+}
+
+.message {
+    background-color: dodgerblue;
+    padding: 10px;
+    color: #f8f8f8;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message {
+    margin-left: auto;
+    background-color: #f8f8f8;
+    color: black;
+}
+
+.footer form {
+    display: flex;
+}
+
+.body {
+     width: 270px;
+     height: 50vh;
+    border-radius: 10%;
+    background-color: #111122;
+    outline: #1f5aff;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+
+/*
+.container {
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: dodgerblue;
+}
+
+form input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blue;
+    transition: 0.2s ease;
+} */
